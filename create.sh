@@ -2,6 +2,7 @@
 
 ###Terraform Initialize####
 cd terraform
+terraform refresh
 terraform init
 ls
 terraform apply -var "access_key=$1" -var "secret_key=$2" -auto-approve > terraform.log
