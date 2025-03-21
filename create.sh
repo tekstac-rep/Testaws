@@ -7,10 +7,7 @@ SECRET_KEY="$2"
 cd terraform || { echo "Terraform directory not found!"; exit 1; }
 
 # Remove old Terraform state (force fresh start)
-pwd 
-ls -lart
 rm -rf .terraform terraform.tfstate terraform.tfstate.backup
-exit 0
 # Initialize Terraform
 terraform init
 
